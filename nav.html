@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+
+    <div class="nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="product.html">Cleansing Gel</a></li>
+                <li>
+                    <button class="nav__btn btn-vinous" data-modal="contactModal">Модальное окно</button>
+                </li>
+            </ul>
+
+            <div class="modal" id="contactModal">
+                <div class="modal__dialog">
+                    <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8129 11.3138L20.6645 2.85273C20.8805 2.61982 20.9997 2.30908 21 1.97774C21 1.64622 20.8808 1.33511 20.6645 1.10257L19.9765 0.361329C19.7601 0.127863 19.4718 0 19.164 0C18.8566 0 18.5683 0.127863 18.352 0.361329L10.5003 8.82184L2.64839 0.361329C2.43241 0.127863 2.14388 0 1.83622 0C1.5289 0 1.24037 0.127863 1.02439 0.361329L0.336 1.10257C-0.112 1.58532 -0.112 2.37053 0.336 2.85273L8.18778 11.3138L0.336 19.7745C0.119854 20.0078 0.000853659 20.3185 0.000853659 20.6498C0.000853659 20.9812 0.119854 21.2919 0.336 21.525L1.02422 22.2663C1.2402 22.4995 1.5289 22.6276 1.83605 22.6276C2.14371 22.6276 2.43224 22.4995 2.64822 22.2663L10.5002 13.8056L18.3518 22.2663C18.5681 22.4995 18.8565 22.6276 19.1638 22.6276H19.1641C19.4716 22.6276 19.76 22.4995 19.9763 22.2663L20.6643 21.525C20.8803 21.2921 20.9995 20.9812 20.9995 20.6498C20.9995 20.3185 20.8803 20.0078 20.6643 19.7747L12.8129 11.3138Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                    <div class="modal__content">
+                        <h3 class="modal__title">Заявка</h3>
+                        <div class="modal__subtitle">На бесплатную консультацию</div>
+                        <form class="modal__form form">
+                            <div class="modal__form-flex">
+                                <fieldset class="modal__form-group">
+                                    <input type="text" placeholder="Имя">
+                                </fieldset>
+                                <fieldset class="modal__form-group">
+                                    <input type="tel" placeholder="Телефон">
+                                </fieldset>
+                            </div>
+                            <div class="modal__check">
+                                <input type="checkbox">
+                                <label>Я соглашаюсь на обработку <br> <a href="">персональных данных</a></label>
+                            </div>
+                            <button class="modal__form-btn btn-vinous">отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
